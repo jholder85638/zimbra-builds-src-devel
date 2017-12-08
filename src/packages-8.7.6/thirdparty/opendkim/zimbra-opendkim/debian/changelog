@@ -1,0 +1,11 @@
+zimbra-opendkim (VERSION-1zimbra8.7b2ZAPPEND) unstable; urgency=medium
+
+  * Add patch for ticket 226
+
+ -- Zimbra Packaging Services <packaging-devel@zimbra.com>  Mon, 2 May 2016 22:26:24 +0000
+
+zimbra-opendkim (VERSION-ITERATIONZAPPEND) unstable; urgency=medium
+
+  * Initial Release.
+
+ -- Zimbra Packaging Services <packaging-devel@zimbra.com>  Fri, 1 May 2015 22:26:24 +0000

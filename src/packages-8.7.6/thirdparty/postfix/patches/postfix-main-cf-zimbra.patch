@@ -1,0 +1,76 @@
+--- postfix-3.0.3/conf/main.cf.orig	2016-02-09 13:01:33.516094855 -0600
++++ postfix-3.0.3/conf/main.cf	2016-02-09 13:01:54.368094160 -0600
+@@ -262,7 +262,7 @@
+ # only the local machine.
+ # 
+ #mynetworks_style = class
+-#mynetworks_style = subnet
++mynetworks_style = subnet
+ #mynetworks_style = host
+ 
+ # Alternatively, you can specify the mynetworks list by hand, in
+@@ -541,7 +541,7 @@
+ #
+ # For details, see "man header_checks".
+ #
+-#header_checks = regexp:/etc/postfix/header_checks
++header_checks = pcre:/opt/zimbra/conf/postfix_header_checks
+ 
+ # FAST ETRN SERVICE
+ #
+@@ -673,4 +673,54 @@
+ # readme_directory: The location of the Postfix README files.
+ #
+ readme_directory =
+-inet_protocols = ipv4
++inet_protocols = all
++
++#
++# Zimbra changes.
++#
++
++virtual_mailbox_maps = proxy:ldap:/opt/zimbra/conf/ldap-vmm.cf
++
++virtual_mailbox_domains = proxy:ldap:/opt/zimbra/conf/ldap-vmd.cf
++
++virtual_alias_maps = proxy:ldap:/opt/zimbra/conf/ldap-vam.cf
++
++virtual_alias_domains = proxy:ldap:/opt/zimbra/conf/ldap-vad.cf
++
++virtual_transport = error
++
++canonical_maps = proxy:ldap:/opt/zimbra/conf/ldap-canonical.cf
++
++transport_maps = proxy:ldap:/opt/zimbra/conf/ldap-transport.cf
++
++# If (email domain name == host name), we don't want $myhostname in
++# mydestination for testing purposes.
++mydestination = localhost.localdomain localhost
++
++# Disable NIS which is in the default
++alias_maps = lmdb:/etc/aliases
++
++# for security...
++allow_mail_to_commands =
++allow_mail_to_files =
++
++smtpd_helo_required = yes
++
++smtpd_client_restrictions = reject_unauth_pipelining
++
++smtpd_data_restrictions = reject_unauth_pipelining
++
++smtpd_recipient_restrictions =
++       reject_non_fqdn_recipient,
++       permit_sasl_authenticated,
++       permit_mynetworks,
++       reject_unauth_destination
++
++broken_sasl_auth_clients = yes
++
++smtpd_use_tls = yes
++smtpd_tls_cert_file = /opt/zimbra/conf/smtpd.crt
++smtpd_tls_key_file = /opt/zimbra/conf/smtpd.key
++smtpd_tls_loglevel = 3
++smtputf8_enable = no
++
