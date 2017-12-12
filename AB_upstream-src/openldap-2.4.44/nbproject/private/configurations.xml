@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="97">
+<configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
       <df name="build">
@@ -7,6 +7,8 @@
       </df>
       <df name="clients">
         <df name="tools">
+          <df name=".libs">
+          </df>
           <in>common.c</in>
           <in>common.h</in>
           <in>ldapcompare.c</in>
@@ -18,6 +20,15 @@
           <in>ldapsearch.c</in>
           <in>ldapurl.c</in>
           <in>ldapwhoami.c</in>
+          <in>ldcversion.c</in>
+          <in>lddversion.c</in>
+          <in>ldeversion.c</in>
+          <in>ldmversion.c</in>
+          <in>ldpversion.c</in>
+          <in>ldrversion.c</in>
+          <in>ldsversion.c</in>
+          <in>lduversion.c</in>
+          <in>ldwversion.c</in>
         </df>
       </df>
       <df name="contrib">
@@ -178,6 +189,8 @@
             <in>lastmod.c</in>
           </df>
           <df name="noopsrch">
+            <df name=".libs">
+            </df>
             <in>noopsrch.c</in>
           </df>
           <df name="nops">
@@ -211,6 +224,8 @@
               <in>pw-pbkdf2.c</in>
             </df>
             <df name="sha2">
+              <df name=".libs">
+              </df>
               <in>sha2.c</in>
               <in>sha2.h</in>
               <in>slapd-sha2.c</in>
@@ -304,9 +319,12 @@
         <in>getopt-compat.h</in>
         <in>lber.h</in>
         <in>lber_pvt.h</in>
+        <in>lber_types.h</in>
         <in>ldap.h</in>
         <in>ldap_cdefs.h</in>
+        <in>ldap_config.h</in>
         <in>ldap_defaults.h</in>
+        <in>ldap_features.h</in>
         <in>ldap_int_thread.h</in>
         <in>ldap_log.h</in>
         <in>ldap_pvt.h</in>
@@ -324,12 +342,15 @@
         <in>lutil_md5.h</in>
         <in>lutil_meter.h</in>
         <in>lutil_sha1.h</in>
+        <in>portable.h</in>
         <in>rewrite.h</in>
         <in>slapi-plugin.h</in>
         <in>sysexits-compat.h</in>
       </df>
       <df name="libraries">
         <df name="liblber">
+          <df name=".libs">
+          </df>
           <in>assert.c</in>
           <in>bprint.c</in>
           <in>debug.c</in>
@@ -345,8 +366,11 @@
           <in>options.c</in>
           <in>sockbuf.c</in>
           <in>stdio.c</in>
+          <in>version.c</in>
         </df>
         <df name="libldap">
+          <df name=".libs">
+          </df>
           <in>abandon.c</in>
           <in>add.c</in>
           <in>addentry.c</in>
@@ -415,14 +439,68 @@
           <in>utf-8-conv.c</in>
           <in>utf-8.c</in>
           <in>util-int.c</in>
+          <in>version.c</in>
           <in>vlvctrl.c</in>
           <in>whoami.c</in>
         </df>
         <df name="libldap_r">
+          <df name=".libs">
+          </df>
+          <in>abandon.c</in>
+          <in>add.c</in>
+          <in>addentry.c</in>
+          <in>apitest.c</in>
+          <in>assertion.c</in>
+          <in>bind.c</in>
+          <in>cancel.c</in>
+          <in>charray.c</in>
+          <in>compare.c</in>
+          <in>controls.c</in>
+          <in>cyrus.c</in>
+          <in>dds.c</in>
+          <in>delete.c</in>
+          <in>deref.c</in>
+          <in>dnssrv.c</in>
+          <in>error.c</in>
+          <in>extended.c</in>
+          <in>fetch.c</in>
+          <in>filter.c</in>
+          <in>free.c</in>
+          <in>getattr.c</in>
+          <in>getdn.c</in>
+          <in>getentry.c</in>
+          <in>getvalues.c</in>
+          <in>gssapi.c</in>
+          <in>init.c</in>
+          <in>ldap_sync.c</in>
           <in>ldap_thr_debug.h</in>
+          <in>ldif.c</in>
+          <in>messages.c</in>
+          <in>modify.c</in>
+          <in>modrdn.c</in>
+          <in>open.c</in>
+          <in>options.c</in>
+          <in>os-ip.c</in>
+          <in>os-local.c</in>
+          <in>pagectrl.c</in>
+          <in>passwd.c</in>
+          <in>ppolicy.c</in>
+          <in>print.c</in>
           <in>rdwr.c</in>
+          <in>references.c</in>
+          <in>request.c</in>
+          <in>result.c</in>
           <in>rmutex.c</in>
           <in>rq.c</in>
+          <in>sasl.c</in>
+          <in>sbind.c</in>
+          <in>schema.c</in>
+          <in>search.c</in>
+          <in>sort.c</in>
+          <in>sortctrl.c</in>
+          <in>stctrl.c</in>
+          <in>string.c</in>
+          <in>test.c</in>
           <in>thr_cthreads.c</in>
           <in>thr_debug.c</in>
           <in>thr_nt.c</in>
@@ -431,7 +509,21 @@
           <in>thr_stub.c</in>
           <in>thr_thr.c</in>
           <in>threads.c</in>
+          <in>tls2.c</in>
+          <in>tls_g.c</in>
+          <in>tls_m.c</in>
+          <in>tls_o.c</in>
           <in>tpool.c</in>
+          <in>turn.c</in>
+          <in>txn.c</in>
+          <in>unbind.c</in>
+          <in>url.c</in>
+          <in>utf-8-conv.c</in>
+          <in>utf-8.c</in>
+          <in>util-int.c</in>
+          <in>version.c</in>
+          <in>vlvctrl.c</in>
+          <in>whoami.c</in>
         </df>
         <df name="liblmdb">
           <in>lmdb.h</in>
@@ -468,7 +560,15 @@
             <in>utbm.h</in>
             <in>utbmstub.c</in>
           </df>
+          <in>ucdata.c</in>
+          <in>ucdata.h</in>
+          <in>ucgendat.c</in>
           <in>ucstr.c</in>
+          <in>uctable.h</in>
+          <in>ure.c</in>
+          <in>ure.h</in>
+          <in>urestubs.c</in>
+          <in>version.c</in>
         </df>
         <df name="liblutil">
           <in>avl.c</in>
@@ -498,8 +598,11 @@
           <in>testtavl.c</in>
           <in>utils.c</in>
           <in>uuid.c</in>
+          <in>version.c</in>
         </df>
         <df name="librewrite">
+          <df name=".libs">
+          </df>
           <in>config.c</in>
           <in>context.c</in>
           <in>info.c</in>
@@ -514,11 +617,14 @@
           <in>session.c</in>
           <in>subst.c</in>
           <in>var.c</in>
+          <in>version.c</in>
           <in>xmap.c</in>
         </df>
       </df>
       <df name="servers">
         <df name="slapd">
+          <df name=".libs">
+          </df>
           <df name="back-bdb">
             <in>add.c</in>
             <in>attr.c</in>
@@ -552,6 +658,8 @@
             <in>trans.c</in>
           </df>
           <df name="back-dnssrv">
+            <df name=".libs">
+            </df>
             <in>bind.c</in>
             <in>compare.c</in>
             <in>config.c</in>
@@ -559,11 +667,14 @@
             <in>proto-dnssrv.h</in>
             <in>referral.c</in>
             <in>search.c</in>
+            <in>version.c</in>
           </df>
           <df name="back-hdb">
             <in>back-bdb.h</in>
           </df>
           <df name="back-ldap">
+            <df name=".libs">
+            </df>
             <in>add.c</in>
             <in>back-ldap.h</in>
             <in>bind.c</in>
@@ -581,11 +692,15 @@
             <in>proto-ldap.h</in>
             <in>search.c</in>
             <in>unbind.c</in>
+            <in>version.c</in>
           </df>
           <df name="back-ldif">
             <in>ldif.c</in>
+            <in>version.c</in>
           </df>
           <df name="back-mdb">
+            <df name=".libs">
+            </df>
             <in>add.c</in>
             <in>attr.c</in>
             <in>back-mdb.h</in>
@@ -612,8 +727,11 @@
             <in>referral.c</in>
             <in>search.c</in>
             <in>tools.c</in>
+            <in>version.c</in>
           </df>
           <df name="back-meta">
+            <df name=".libs">
+            </df>
             <in>add.c</in>
             <in>back-meta.h</in>
             <in>bind.c</in>
@@ -631,8 +749,11 @@
             <in>search.c</in>
             <in>suffixmassage.c</in>
             <in>unbind.c</in>
+            <in>version.c</in>
           </df>
           <df name="back-monitor">
+            <df name=".libs">
+            </df>
             <in>back-monitor.h</in>
             <in>backend.c</in>
             <in>bind.c</in>
@@ -654,6 +775,7 @@
             <in>sent.c</in>
             <in>thread.c</in>
             <in>time.c</in>
+            <in>version.c</in>
           </df>
           <df name="back-ndb">
             <in>add.cpp</in>
@@ -671,14 +793,20 @@
             <in>tools.cpp</in>
           </df>
           <df name="back-null">
+            <df name=".libs">
+            </df>
             <in>null.c</in>
+            <in>version.c</in>
           </df>
           <df name="back-passwd">
+            <df name=".libs">
+            </df>
             <in>back-passwd.h</in>
             <in>config.c</in>
             <in>init.c</in>
             <in>proto-passwd.h</in>
             <in>search.c</in>
+            <in>version.c</in>
           </df>
           <df name="back-perl">
             <in>add.c</in>
@@ -696,10 +824,13 @@
             <in>search.c</in>
           </df>
           <df name="back-relay">
+            <df name=".libs">
+            </df>
             <in>back-relay.h</in>
             <in>init.c</in>
             <in>op.c</in>
             <in>proto-back-relay.h</in>
+            <in>version.c</in>
           </df>
           <df name="back-shell">
             <in>add.c</in>
@@ -718,6 +849,8 @@
             <in>unbind.c</in>
           </df>
           <df name="back-sock">
+            <df name=".libs">
+            </df>
             <in>add.c</in>
             <in>back-sock.h</in>
             <in>bind.c</in>
@@ -732,6 +865,7 @@
             <in>result.c</in>
             <in>search.c</in>
             <in>unbind.c</in>
+            <in>version.c</in>
           </df>
           <df name="back-sql">
             <df name="docs">
@@ -772,6 +906,8 @@
             <in>util.c</in>
           </df>
           <df name="overlays">
+            <df name=".libs">
+            </df>
             <in>accesslog.c</in>
             <in>auditlog.c</in>
             <in>collect.c</in>
@@ -793,10 +929,12 @@
             <in>rwmmap.c</in>
             <in>seqmod.c</in>
             <in>sssvlv.c</in>
+            <in>statover.c</in>
             <in>syncprov.c</in>
             <in>translucent.c</in>
             <in>unique.c</in>
             <in>valsort.c</in>
+            <in>version.c</in>
           </df>
           <df name="schema">
           </df>
@@ -829,6 +967,7 @@
           <in>attr.c</in>
           <in>ava.c</in>
           <in>backend.c</in>
+          <in>backends.c</in>
           <in>backglue.c</in>
           <in>backover.c</in>
           <in>bconfig.c</in>
@@ -908,6 +1047,7 @@
           <in>unbind.c</in>
           <in>user.c</in>
           <in>value.c</in>
+          <in>version.c</in>
           <in>zn_malloc.c</in>
         </df>
       </df>
@@ -933,6 +1073,8 @@
           </df>
         </df>
         <df name="progs">
+          <df name=".libs">
+          </df>
           <in>ldif-filter.c</in>
           <in>slapd-addel.c</in>
           <in>slapd-bind.c</in>
@@ -955,7 +1097,7 @@
     <conf name="Default" type="0">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
-        <platform>3</platform>
+        <platform>2</platform>
       </toolsSet>
       <compile>
         <compiledirpicklist>

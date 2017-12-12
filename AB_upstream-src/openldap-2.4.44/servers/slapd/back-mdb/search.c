@@ -1278,10 +1278,15 @@ static void *search_stack( Operation *op )
 	struct mdb_info *mdb = (struct mdb_info *) op->o_bd->be_private;
 	void *ret = NULL;
 
-	if ( op->o_threadctx ) {
+	if ( op->o_threadctx ) {                
+               Debug( LDAP_DEBUG, "Entering o_threadctx line 1281\n", 0, 0, 0);
+                #if HAVE_PTHREADS
+                     Debug( LDAP_DEBUG, "HAVE_PTHREADS true 1284\n", 0, 0, 0);
+                #endif
 		ldap_pvt_thread_pool_getkey( op->o_threadctx, (void *)search_stack,
 			&ret, NULL );
 	} else {
+                Debug( LDAP_DEBUG, "Entering else line 1286\n", 0, 0, 0);
 		ret = mdb->mi_search_stack;
 	}
 
@@ -1289,9 +1294,11 @@ static void *search_stack( Operation *op )
 		ret = ch_malloc( mdb->mi_search_stack_depth * MDB_IDL_UM_SIZE
 			* sizeof( ID ) );
 		if ( op->o_threadctx ) {
+                        Debug( LDAP_DEBUG, "o_threadctx: search_stack line 1294\n", 0, 0, 0);
 			ldap_pvt_thread_pool_setkey( op->o_threadctx, (void *)search_stack,
 				ret, search_stack_free, NULL, NULL );
 		} else {
+                    Debug( LDAP_DEBUG, "sle search_stack line 1298\n", 0, 0, 0);
 			mdb->mi_search_stack = ret;
 		}
 	}

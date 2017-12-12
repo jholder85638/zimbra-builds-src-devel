@@ -1,21 +1,21 @@
 Summary:            Zimbra's openldap build
 Name:               zimbra-openldap
-Version:            VERSION
-Release:            1zimbra8.7b9ZAPPEND
+Version:            2.4.44
+Release:            zimbra_openldap_redux_8.7.0_GA_1659.RHEL6_64.x86_64
 License:            BSD
-Source:             %{name}-%{version}.tgz
-Patch0:             ITS5037.patch
-Patch1:             writers.patch
-Patch2:             ITS7683.patch
-Patch3:             ITS8054.patch
-Patch4:             threadpool.patch
-Patch5:             liblmdb-soname.patch
-Patch6:             ITS7506.patch
-Patch7:             ITS8413.patch
-Patch8:             ITS8432.patch
-BuildRequires:      zimbra-openssl-devel
-BuildRequires:      zimbra-cyrus-sasl-devel
-BuildRequires:      zimbra-libltdl-devel
+#Source:             /opt/zimbra-builds-src-devel/AB_upstream-src/openldap-2.4.44
+#Patch0:             ITS5037.patch
+#Patch1:             writers.patch
+#Patch2:             ITS7683.patch
+#Patch3:             ITS8054.patch
+#Patch4:             threadpool.patch
+#Patch5:             liblmdb-soname.patch
+#Patch6:             ITS7506.patch
+#Patch7:             ITS8413.patch
+#Patch8:             ITS8432.patch
+#BuildRequires:      zimbra-openssl-devel
+#BuildRequires:      zimbra-cyrus-sasl-devel
+#BuildRequires:      zimbra-libltdl-devel
 AutoReqProv:        no
 URL:                http://www.openldap.org
 
@@ -23,6 +23,7 @@ URL:                http://www.openldap.org
 The Zimbra openldap build
 
 %changelog
+* Mon Dec 4 2017  Create ZCS Macros, disable patches - zimbra-openldap-redux-8.7.0_GA_1659.RHEL6_64.x86_64
 * Fri Sep 9 2016  Zimbra Packaging Services <packaging-devel@zimbra.com> - VERSION-1zimbra8.7b9ZAPPEND
 - Another upstream fix for ITS#8448, ITS#8460, ITS#8462, ITS#8490, ITS#8493
 * Thu Jul 29 2016  Zimbra Packaging Services <packaging-devel@zimbra.com> - VERSION-1zimbra8.7b8ZAPPEND
@@ -40,25 +41,36 @@ The Zimbra openldap build
 * Thu Feb 11 2016  Zimbra Packaging Services <packaging-devel@zimbra.com> - VERSION-1zimbra8.7b2ZAPPEND
 - Add patch for ITS#7506
 
-%prep
-%setup -n openldap-%{version}
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
-%patch5 -p1
-%patch6 -p1
-%patch7 -p1
-%patch8 -p1
+#%prep
+#%setup -n openldap-%{version}
+#none of these patches seem to work properly.
+#%patch0 -p1
+#%patch1 -p1
+#%patch2 -p1
+#%patch3 -p1
+#%patch4 -p1
+#%patch5 -p1
+#%patch6 -p1
+#%patch7 -p1
+#%patch8 -p1
+
+%define ZIMBRA_HOME /opt/zimbra/
+%define OZC %{ZIMBRA_HOME}/common/
+%define OZCB %{OZC}/bin/
+%define OZCE %{OZC}/etc/
+%define OZCI %{OZC}/include/
+%define OZCL %{OZC}/lib/
+%define OZCLE %{OZC}/libexec/
+%define OZCS %{OZC}/share/
 
 %build
 # Alternate Makeargs: DEFINES="-DCHECK_CSN -DSLAP_SCHEMA_EXPOSE -DMDB_DEBUG=3"
-LDFLAGS="-LOZCL -Wl,-rpath,OZCL"; export LDFLAGS;
+LDFLAGS="-L%{OZCL} -Wl,-rpath,%{OZCL}"; export LDFLAGS;
 CFLAGS="-O0 -g -D_REENTRANT"; export CFLAGS;
-CPPFLAGS="-IOZCI"; export CPPFLAGS;
-PATH=OZCB:$PATH; export PATH;
-./configure --prefix=OZC \
+CPPFLAGS="-I%{OZCI}"; export CPPFLAGS;
+cd /opt/zimbra-builds-src-devel/AB_upstream-src/openldap-2.4.44/
+PATH=%{OZCB}:$PATH; export PATH;
+./configure --prefix=%{OZC} \
   --with-cyrus-sasl \
   --with-tls=openssl \
   --enable-dynamic \
@@ -76,19 +88,19 @@ PATH=OZCB:$PATH; export PATH;
   --enable-spasswd \
   --localstatedir=/opt/zimbra/data/ldap/state \
   --enable-crypt
-LD_RUN_PATH=OZCL make depend
-LD_RUN_PATH=OZCL make DEFINES="-DCHECK_CSN -DSLAP_SCHEMA_EXPOSE"
-make -C libraries/liblmdb prefix=OZC
-make -C contrib/slapd-modules/noopsrch prefix=OZC
-make -C contrib/slapd-modules/passwd/sha2 prefix=OZC
+LD_RUN_PATH=%{OZCL} make depend
+LD_RUN_PATH=%{OZCL} make DEFINES="-DCHECK_CSN -DSLAP_SCHEMA_EXPOSE"
+make -C libraries/liblmdb prefix=%{OZC}
+make -C contrib/slapd-modules/noopsrch prefix=%{OZC}
+make -C contrib/slapd-modules/passwd/sha2 prefix=%{OZC}
 
 %install
 make install DESTDIR=${RPM_BUILD_ROOT} STRIP=""
 make -C libraries/liblmdb install prefix=OZC DESTDIR=${RPM_BUILD_ROOT} STRIP=""
-make -C contrib/slapd-modules/noopsrch install prefix=OZC DESTDIR=${RPM_BUILD_ROOT} STRIP=""
-make -C contrib/slapd-modules/passwd/sha2 install prefix=OZC DESTDIR=${RPM_BUILD_ROOT} STRIP=""
+make -C contrib/slapd-modules/noopsrch install prefix=%{OZC} DESTDIR=${RPM_BUILD_ROOT} STRIP=""
+make -C contrib/slapd-modules/passwd/sha2 install prefix=%{OZC} DESTDIR=${RPM_BUILD_ROOT} STRIP=""
 rm -rf ${RPM_BUILD_ROOT}/opt/zimbra/data
-rm -f ${RPM_BUILD_ROOT}OZCLE/openldap/noopsrch.a
+rm -f ${RPM_BUILD_ROOT}%{OZCE}/openldap/noopsrch.a
 rm -f ${RPM_BUILD_ROOT}OZCLE/openldap/pw-sha2.a
 rm -f ${RPM_BUILD_ROOT}OZCE/openldap/DB_CONFIG.example
 chmod 755 ${RPM_BUILD_ROOT}OZCLE/openldap/pw-sha2.la ${RPM_BUILD_ROOT}OZCLE/openldap/noopsrch.la
@@ -104,7 +116,7 @@ The zimbra-openldap-libs package contains the openldap libraries
 
 %package devel
 Summary:        openldap Development
-Requires: zimbra-openldap-libs = %{version}-%{release}
+Requires: zimbra-openldap-libs %{version}-%{release}
 AutoReqProv:        no
 
 %description devel
@@ -112,7 +124,7 @@ The zimbra-openldap-devel package contains the linking libraries and include fil
 
 %package server
 Summary:        openldap server binaries
-Requires: zimbra-openldap-libs = %{version}-%{release}, zimbra-cyrus-sasl-libs
+Requires: zimbra-openldap-libs %{version}-%{release}, zimbra-cyrus-sasl-libs
 Requires: zimbra-libltdl-libs, zimbra-ldap-base
 AutoReqProv:        no
 
@@ -121,7 +133,7 @@ The zimbra-openldap-server package contains slapd and its modules
 
 %package client
 Summary:        openldap client binaries
-Requires: zimbra-openldap-libs = %{version}-%{release}, zimbra-cyrus-sasl-libs
+Requires: zimbra-openldap-libs %{version}-%{release}, zimbra-cyrus-sasl-libs
 AutoReqProv:        no
 
 %description client
@@ -145,7 +157,7 @@ The zimbra-lmdb-libs package contains the lmdb library
 
 %package -n zimbra-lmdb-devel
 Summary:        LMDB Development
-Requires: zimbra-lmdb-libs = %{version}-%{release}
+Requires: zimbra-lmdb-libs %{version}-%{release}
 AutoReqProv:        no
 
 %description -n zimbra-lmdb-devel

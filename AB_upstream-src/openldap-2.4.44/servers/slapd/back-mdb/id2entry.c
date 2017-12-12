@@ -672,6 +672,10 @@ int mdb_entry_decode(Operation *op, MDB_txn *txn, MDB_val *data, Entry **e)
 	unsigned char *ptr;
 	BerVarray bptr;
 
+        Debug( LDAP_DEBUG_TRACE,
+		"=> mdb_entry_decode:\n",
+		0, 0, 0 );
+                
 	Debug( LDAP_DEBUG_TRACE,
 		"=> mdb_entry_decode:\n",
 		0, 0, 0 );

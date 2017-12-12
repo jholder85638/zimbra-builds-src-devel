@@ -1,0 +1,2288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="clients">
+        <df name="tools">
+          <in>common.c</in>
+          <in>ldapcompare.c</in>
+          <in>ldapdelete.c</in>
+          <in>ldapexop.c</in>
+          <in>ldapmodify.c</in>
+          <in>ldapmodrdn.c</in>
+          <in>ldappasswd.c</in>
+          <in>ldapsearch.c</in>
+          <in>ldapurl.c</in>
+          <in>ldapwhoami.c</in>
+        </df>
+      </df>
+      <df name="contrib">
+        <df name="ldapc++">
+          <df name="examples">
+            <in>main.cpp</in>
+            <in>readSchema.cpp</in>
+            <in>startTls.cpp</in>
+            <in>urlTest.cpp</in>
+          </df>
+          <df name="src">
+            <in>LDAPAddRequest.cpp</in>
+            <in>LDAPAsynConnection.cpp</in>
+            <in>LDAPAttrType.cpp</in>
+            <in>LDAPAttribute.cpp</in>
+            <in>LDAPAttributeList.cpp</in>
+            <in>LDAPBindRequest.cpp</in>
+            <in>LDAPCompareRequest.cpp</in>
+            <in>LDAPConnection.cpp</in>
+            <in>LDAPConstraints.cpp</in>
+            <in>LDAPControl.cpp</in>
+            <in>LDAPControlSet.cpp</in>
+            <in>LDAPDeleteRequest.cpp</in>
+            <in>LDAPEntry.cpp</in>
+            <in>LDAPEntryList.cpp</in>
+            <in>LDAPException.cpp</in>
+            <in>LDAPExtRequest.cpp</in>
+            <in>LDAPExtResult.cpp</in>
+            <in>LDAPMessage.cpp</in>
+            <in>LDAPMessageQueue.cpp</in>
+            <in>LDAPModDNRequest.cpp</in>
+            <in>LDAPModList.cpp</in>
+            <in>LDAPModification.cpp</in>
+            <in>LDAPModifyRequest.cpp</in>
+            <in>LDAPObjClass.cpp</in>
+            <in>LDAPRebind.cpp</in>
+            <in>LDAPRebindAuth.cpp</in>
+            <in>LDAPReferenceList.cpp</in>
+            <in>LDAPRequest.cpp</in>
+            <in>LDAPResult.cpp</in>
+            <in>LDAPSaslBindResult.cpp</in>
+            <in>LDAPSchema.cpp</in>
+            <in>LDAPSearchReference.cpp</in>
+            <in>LDAPSearchRequest.cpp</in>
+            <in>LDAPSearchResult.cpp</in>
+            <in>LDAPSearchResults.cpp</in>
+            <in>LDAPUrl.cpp</in>
+            <in>LDAPUrlList.cpp</in>
+            <in>LdifReader.cpp</in>
+            <in>LdifWriter.cpp</in>
+            <in>SaslInteraction.cpp</in>
+            <in>SaslInteractionHandler.cpp</in>
+            <in>StringList.cpp</in>
+            <in>TlsOptions.cpp</in>
+          </df>
+        </df>
+        <df name="ldaptcl">
+          <in>neoXldap.c</in>
+          <in>tclAppInit.c</in>
+          <in>tkAppInit.c</in>
+        </df>
+        <df name="slapd-modules">
+          <df name="acl">
+            <in>gssacl.c</in>
+            <in>posixgroup.c</in>
+          </df>
+          <df name="addpartial">
+            <in>addpartial-overlay.c</in>
+          </df>
+          <df name="allop">
+            <in>allop.c</in>
+          </df>
+          <df name="allowed">
+            <in>allowed.c</in>
+          </df>
+          <df name="autogroup">
+            <in>autogroup.c</in>
+          </df>
+          <df name="cloak">
+            <in>cloak.c</in>
+          </df>
+          <df name="comp_match">
+            <in>asn_to_syn_mr.c</in>
+            <in>authorityKeyIdentifier.c</in>
+            <in>certificate.c</in>
+            <in>componentlib.c</in>
+            <in>crl.c</in>
+            <in>init.c</in>
+          </df>
+          <df name="denyop">
+            <in>denyop.c</in>
+          </df>
+          <df name="dsaschema">
+            <in>dsaschema.c</in>
+          </df>
+          <df name="dupent">
+            <in>dupent.c</in>
+          </df>
+          <df name="kinit">
+            <in>kinit.c</in>
+          </df>
+          <df name="lastbind">
+            <in>lastbind.c</in>
+          </df>
+          <df name="lastmod">
+            <in>lastmod.c</in>
+          </df>
+          <df name="noopsrch">
+            <in>noopsrch.c</in>
+          </df>
+          <df name="nops">
+            <in>nops.c</in>
+          </df>
+          <df name="nssov">
+            <df name="nss-pam-ldapd">
+              <in>tio.c</in>
+            </df>
+            <in>alias.c</in>
+            <in>ether.c</in>
+            <in>group.c</in>
+            <in>host.c</in>
+            <in>netgroup.c</in>
+            <in>network.c</in>
+            <in>nssov.c</in>
+            <in>pam.c</in>
+            <in>passwd.c</in>
+            <in>protocol.c</in>
+            <in>rpc.c</in>
+            <in>service.c</in>
+            <in>shadow.c</in>
+          </df>
+          <df name="passwd">
+            <df name="pbkdf2">
+              <in>pw-pbkdf2.c</in>
+            </df>
+            <df name="sha2">
+              <in>sha2.c</in>
+              <in>slapd-sha2.c</in>
+            </df>
+            <in>apr1.c</in>
+            <in>kerberos.c</in>
+            <in>netscape.c</in>
+            <in>radius.c</in>
+          </df>
+          <df name="proxyOld">
+            <in>proxyOld.c</in>
+          </df>
+          <df name="samba4">
+            <in>pguid.c</in>
+            <in>rdnval.c</in>
+            <in>vernum.c</in>
+          </df>
+          <df name="smbk5pwd">
+            <in>smbk5pwd.c</in>
+          </df>
+          <df name="trace">
+            <in>trace.c</in>
+          </df>
+        </df>
+        <df name="slapi-plugins">
+          <df name="addrdnvalues">
+            <in>addrdnvalues.c</in>
+          </df>
+        </df>
+      </df>
+      <df name="doc">
+        <df name="devel">
+          <in>template.c</in>
+        </df>
+      </df>
+      <df name="libraries">
+        <df name="liblber">
+          <in>assert.c</in>
+          <in>bprint.c</in>
+          <in>debug.c</in>
+          <in>decode.c</in>
+          <in>dtest.c</in>
+          <in>encode.c</in>
+          <in>etest.c</in>
+          <in>idtest.c</in>
+          <in>io.c</in>
+          <in>memory.c</in>
+          <in>nt_err.c</in>
+          <in>options.c</in>
+          <in>sockbuf.c</in>
+          <in>stdio.c</in>
+        </df>
+        <df name="libldap">
+          <in>abandon.c</in>
+          <in>add.c</in>
+          <in>addentry.c</in>
+          <in>apitest.c</in>
+          <in>assertion.c</in>
+          <in>bind.c</in>
+          <in>cancel.c</in>
+          <in>charray.c</in>
+          <in>compare.c</in>
+          <in>controls.c</in>
+          <in>cyrus.c</in>
+          <in>dds.c</in>
+          <in>delete.c</in>
+          <in>deref.c</in>
+          <in>dnssrv.c</in>
+          <in>dntest.c</in>
+          <in>error.c</in>
+          <in>extended.c</in>
+          <in>fetch.c</in>
+          <in>filter.c</in>
+          <in>free.c</in>
+          <in>ftest.c</in>
+          <in>getattr.c</in>
+          <in>getdn.c</in>
+          <in>getentry.c</in>
+          <in>getvalues.c</in>
+          <in>gssapi.c</in>
+          <in>init.c</in>
+          <in>ldap_sync.c</in>
+          <in>ldif.c</in>
+          <in>messages.c</in>
+          <in>modify.c</in>
+          <in>modrdn.c</in>
+          <in>open.c</in>
+          <in>options.c</in>
+          <in>os-ip.c</in>
+          <in>os-local.c</in>
+          <in>pagectrl.c</in>
+          <in>passwd.c</in>
+          <in>ppolicy.c</in>
+          <in>print.c</in>
+          <in>references.c</in>
+          <in>request.c</in>
+          <in>result.c</in>
+          <in>sasl.c</in>
+          <in>sbind.c</in>
+          <in>schema.c</in>
+          <in>search.c</in>
+          <in>sort.c</in>
+          <in>sortctrl.c</in>
+          <in>stctrl.c</in>
+          <in>string.c</in>
+          <in>t61.c</in>
+          <in>test.c</in>
+          <in>tls2.c</in>
+          <in>tls_g.c</in>
+          <in>tls_m.c</in>
+          <in>tls_o.c</in>
+          <in>turn.c</in>
+          <in>txn.c</in>
+          <in>unbind.c</in>
+          <in>url.c</in>
+          <in>urltest.c</in>
+          <in>utf-8-conv.c</in>
+          <in>utf-8.c</in>
+          <in>util-int.c</in>
+          <in>vlvctrl.c</in>
+          <in>whoami.c</in>
+        </df>
+        <df name="libldap_r">
+          <in>rdwr.c</in>
+          <in>rmutex.c</in>
+          <in>rq.c</in>
+          <in>thr_cthreads.c</in>
+          <in>thr_debug.c</in>
+          <in>thr_nt.c</in>
+          <in>thr_posix.c</in>
+          <in>thr_pth.c</in>
+          <in>thr_stub.c</in>
+          <in>thr_thr.c</in>
+          <in>threads.c</in>
+          <in>tpool.c</in>
+        </df>
+        <df name="liblmdb">
+          <in>mdb.c</in>
+          <in>mdb_copy.c</in>
+          <in>mdb_dump.c</in>
+          <in>mdb_load.c</in>
+          <in>mdb_stat.c</in>
+          <in>midl.c</in>
+          <in>mtest.c</in>
+          <in>mtest2.c</in>
+          <in>mtest3.c</in>
+          <in>mtest4.c</in>
+          <in>mtest5.c</in>
+          <in>mtest6.c</in>
+        </df>
+        <df name="liblunicode">
+          <df name="ucdata">
+            <in>ucdata.c</in>
+            <in>ucgendat.c</in>
+            <in>ucpgba.c</in>
+          </df>
+          <df name="ure">
+            <in>ure.c</in>
+            <in>urestubs.c</in>
+          </df>
+          <df name="utbm">
+            <in>utbm.c</in>
+            <in>utbmstub.c</in>
+          </df>
+          <in>ucstr.c</in>
+        </df>
+        <df name="liblutil">
+          <in>avl.c</in>
+          <in>base64.c</in>
+          <in>detach.c</in>
+          <in>entropy.c</in>
+          <in>getopt.c</in>
+          <in>getpass.c</in>
+          <in>getpeereid.c</in>
+          <in>hash.c</in>
+          <in>lockf.c</in>
+          <in>md5.c</in>
+          <in>memcmp.c</in>
+          <in>meter.c</in>
+          <in>ntservice.c</in>
+          <in>passfile.c</in>
+          <in>passwd.c</in>
+          <in>ptest.c</in>
+          <in>sasl.c</in>
+          <in>setproctitle.c</in>
+          <in>sha1.c</in>
+          <in>signal.c</in>
+          <in>sockpair.c</in>
+          <in>tavl.c</in>
+          <in>testavl.c</in>
+          <in>testtavl.c</in>
+          <in>utils.c</in>
+          <in>uuid.c</in>
+        </df>
+        <df name="librewrite">
+          <in>config.c</in>
+          <in>context.c</in>
+          <in>info.c</in>
+          <in>ldapmap.c</in>
+          <in>map.c</in>
+          <in>params.c</in>
+          <in>parse.c</in>
+          <in>rewrite.c</in>
+          <in>rule.c</in>
+          <in>session.c</in>
+          <in>subst.c</in>
+          <in>var.c</in>
+          <in>xmap.c</in>
+        </df>
+      </df>
+      <df name="servers">
+        <df name="slapd">
+          <df name="back-bdb">
+            <in>add.c</in>
+            <in>attr.c</in>
+            <in>bind.c</in>
+            <in>cache.c</in>
+            <in>compare.c</in>
+            <in>config.c</in>
+            <in>dbcache.c</in>
+            <in>delete.c</in>
+            <in>dn2entry.c</in>
+            <in>dn2id.c</in>
+            <in>error.c</in>
+            <in>extended.c</in>
+            <in>filterindex.c</in>
+            <in>id2entry.c</in>
+            <in>idl.c</in>
+            <in>index.c</in>
+            <in>init.c</in>
+            <in>key.c</in>
+            <in>modify.c</in>
+            <in>modrdn.c</in>
+            <in>monitor.c</in>
+            <in>nextid.c</in>
+            <in>operational.c</in>
+            <in>referral.c</in>
+            <in>search.c</in>
+            <in>tools.c</in>
+            <in>trans.c</in>
+          </df>
+          <df name="back-dnssrv">
+            <in>bind.c</in>
+            <in>compare.c</in>
+            <in>config.c</in>
+            <in>init.c</in>
+            <in>referral.c</in>
+            <in>search.c</in>
+          </df>
+          <df name="back-ldap">
+            <in>add.c</in>
+            <in>bind.c</in>
+            <in>chain.c</in>
+            <in>compare.c</in>
+            <in>config.c</in>
+            <in>delete.c</in>
+            <in>distproc.c</in>
+            <in>extended.c</in>
+            <in>init.c</in>
+            <in>modify.c</in>
+            <in>modrdn.c</in>
+            <in>monitor.c</in>
+            <in>pbind.c</in>
+            <in>search.c</in>
+            <in>unbind.c</in>
+          </df>
+          <df name="back-ldif">
+            <in>ldif.c</in>
+          </df>
+          <df name="back-mdb">
+            <in>add.c</in>
+            <in>attr.c</in>
+            <in>bind.c</in>
+            <in>compare.c</in>
+            <in>config.c</in>
+            <in>delete.c</in>
+            <in>dn2entry.c</in>
+            <in>dn2id.c</in>
+            <in>extended.c</in>
+            <in>filterindex.c</in>
+            <in>id2entry.c</in>
+            <in>idl.c</in>
+            <in>index.c</in>
+            <in>init.c</in>
+            <in>key.c</in>
+            <in>modify.c</in>
+            <in>modrdn.c</in>
+            <in>monitor.c</in>
+            <in>nextid.c</in>
+            <in>operational.c</in>
+            <in>referral.c</in>
+            <in>search.c</in>
+            <in>tools.c</in>
+          </df>
+          <df name="back-meta">
+            <in>add.c</in>
+            <in>bind.c</in>
+            <in>candidates.c</in>
+            <in>compare.c</in>
+            <in>config.c</in>
+            <in>conn.c</in>
+            <in>delete.c</in>
+            <in>dncache.c</in>
+            <in>init.c</in>
+            <in>map.c</in>
+            <in>modify.c</in>
+            <in>modrdn.c</in>
+            <in>search.c</in>
+            <in>suffixmassage.c</in>
+            <in>unbind.c</in>
+          </df>
+          <df name="back-monitor">
+            <in>backend.c</in>
+            <in>bind.c</in>
+            <in>cache.c</in>
+            <in>compare.c</in>
+            <in>conn.c</in>
+            <in>database.c</in>
+            <in>entry.c</in>
+            <in>init.c</in>
+            <in>listener.c</in>
+            <in>log.c</in>
+            <in>modify.c</in>
+            <in>operation.c</in>
+            <in>operational.c</in>
+            <in>overlay.c</in>
+            <in>rww.c</in>
+            <in>search.c</in>
+            <in>sent.c</in>
+            <in>thread.c</in>
+            <in>time.c</in>
+          </df>
+          <df name="back-ndb">
+            <in>add.cpp</in>
+            <in>bind.cpp</in>
+            <in>compare.cpp</in>
+            <in>config.cpp</in>
+            <in>delete.cpp</in>
+            <in>init.cpp</in>
+            <in>modify.cpp</in>
+            <in>modrdn.cpp</in>
+            <in>ndbio.cpp</in>
+            <in>search.cpp</in>
+            <in>tools.cpp</in>
+          </df>
+          <df name="back-null">
+            <in>null.c</in>
+          </df>
+          <df name="back-passwd">
+            <in>config.c</in>
+            <in>init.c</in>
+            <in>search.c</in>
+          </df>
+          <df name="back-perl">
+            <in>add.c</in>
+            <in>bind.c</in>
+            <in>close.c</in>
+            <in>compare.c</in>
+            <in>config.c</in>
+            <in>delete.c</in>
+            <in>init.c</in>
+            <in>modify.c</in>
+            <in>modrdn.c</in>
+            <in>search.c</in>
+          </df>
+          <df name="back-relay">
+            <in>init.c</in>
+            <in>op.c</in>
+          </df>
+          <df name="back-shell">
+            <in>add.c</in>
+            <in>bind.c</in>
+            <in>compare.c</in>
+            <in>config.c</in>
+            <in>delete.c</in>
+            <in>fork.c</in>
+            <in>init.c</in>
+            <in>modify.c</in>
+            <in>modrdn.c</in>
+            <in>result.c</in>
+            <in>search.c</in>
+            <in>unbind.c</in>
+          </df>
+          <df name="back-sock">
+            <in>add.c</in>
+            <in>bind.c</in>
+            <in>compare.c</in>
+            <in>config.c</in>
+            <in>delete.c</in>
+            <in>init.c</in>
+            <in>modify.c</in>
+            <in>modrdn.c</in>
+            <in>opensock.c</in>
+            <in>result.c</in>
+            <in>search.c</in>
+            <in>unbind.c</in>
+          </df>
+          <df name="back-sql">
+            <df name="rdbms_depend">
+              <df name="timesten">
+                <df name="dnreverse">
+                  <in>dnreverse.cpp</in>
+                </df>
+              </df>
+            </df>
+            <in>add.c</in>
+            <in>api.c</in>
+            <in>bind.c</in>
+            <in>compare.c</in>
+            <in>config.c</in>
+            <in>delete.c</in>
+            <in>entry-id.c</in>
+            <in>init.c</in>
+            <in>modify.c</in>
+            <in>modrdn.c</in>
+            <in>operational.c</in>
+            <in>schema-map.c</in>
+            <in>search.c</in>
+            <in>sql-wrap.c</in>
+            <in>util.c</in>
+          </df>
+          <df name="overlays">
+            <in>accesslog.c</in>
+            <in>auditlog.c</in>
+            <in>collect.c</in>
+            <in>constraint.c</in>
+            <in>dds.c</in>
+            <in>deref.c</in>
+            <in>dyngroup.c</in>
+            <in>dynlist.c</in>
+            <in>memberof.c</in>
+            <in>overlays.c</in>
+            <in>pcache.c</in>
+            <in>ppolicy.c</in>
+            <in>refint.c</in>
+            <in>retcode.c</in>
+            <in>rwm.c</in>
+            <in>rwmconf.c</in>
+            <in>rwmdn.c</in>
+            <in>rwmmap.c</in>
+            <in>seqmod.c</in>
+            <in>sssvlv.c</in>
+            <in>syncprov.c</in>
+            <in>translucent.c</in>
+            <in>unique.c</in>
+            <in>valsort.c</in>
+          </df>
+          <df name="shell-backends">
+            <in>passwd-shell.c</in>
+            <in>shellutil.c</in>
+          </df>
+          <df name="slapi">
+            <in>plugin.c</in>
+            <in>printmsg.c</in>
+            <in>slapi_dn.c</in>
+            <in>slapi_ext.c</in>
+            <in>slapi_ops.c</in>
+            <in>slapi_overlay.c</in>
+            <in>slapi_pblock.c</in>
+            <in>slapi_utils.c</in>
+          </df>
+          <in>abandon.c</in>
+          <in>aci.c</in>
+          <in>acl.c</in>
+          <in>aclparse.c</in>
+          <in>ad.c</in>
+          <in>add.c</in>
+          <in>alock.c</in>
+          <in>at.c</in>
+          <in>attr.c</in>
+          <in>ava.c</in>
+          <in>backend.c</in>
+          <in>backglue.c</in>
+          <in>backover.c</in>
+          <in>bconfig.c</in>
+          <in>bind.c</in>
+          <in>cancel.c</in>
+          <in>ch_malloc.c</in>
+          <in>compare.c</in>
+          <in>component.c</in>
+          <in>config.c</in>
+          <in>connection.c</in>
+          <in>controls.c</in>
+          <in>cr.c</in>
+          <in>ctxcsn.c</in>
+          <in>daemon.c</in>
+          <in>delete.c</in>
+          <in>dn.c</in>
+          <in>entry.c</in>
+          <in>extended.c</in>
+          <in>filter.c</in>
+          <in>filterentry.c</in>
+          <in>frontend.c</in>
+          <in>globals.c</in>
+          <in>index.c</in>
+          <in>init.c</in>
+          <in>ldapsync.c</in>
+          <in>limits.c</in>
+          <in>lock.c</in>
+          <in>main.c</in>
+          <in>matchedValues.c</in>
+          <in>modify.c</in>
+          <in>modrdn.c</in>
+          <in>mods.c</in>
+          <in>module.c</in>
+          <in>mr.c</in>
+          <in>mra.c</in>
+          <in>nt_svc.c</in>
+          <in>oc.c</in>
+          <in>oidm.c</in>
+          <in>operation.c</in>
+          <in>operational.c</in>
+          <in>passwd.c</in>
+          <in>phonetic.c</in>
+          <in>referral.c</in>
+          <in>result.c</in>
+          <in>root_dse.c</in>
+          <in>sasl.c</in>
+          <in>saslauthz.c</in>
+          <in>schema.c</in>
+          <in>schema_check.c</in>
+          <in>schema_init.c</in>
+          <in>schema_prep.c</in>
+          <in>schemaparse.c</in>
+          <in>search.c</in>
+          <in>sets.c</in>
+          <in>sl_malloc.c</in>
+          <in>slapacl.c</in>
+          <in>slapadd.c</in>
+          <in>slapauth.c</in>
+          <in>slapcat.c</in>
+          <in>slapcommon.c</in>
+          <in>slapdn.c</in>
+          <in>slapindex.c</in>
+          <in>slappasswd.c</in>
+          <in>slapschema.c</in>
+          <in>slaptest.c</in>
+          <in>starttls.c</in>
+          <in>str2filter.c</in>
+          <in>syncrepl.c</in>
+          <in>syntax.c</in>
+          <in>txn.c</in>
+          <in>unbind.c</in>
+          <in>user.c</in>
+          <in>value.c</in>
+          <in>zn_malloc.c</in>
+        </df>
+      </df>
+      <df name="tests">
+        <df name="progs">
+          <in>ldif-filter.c</in>
+          <in>slapd-addel.c</in>
+          <in>slapd-bind.c</in>
+          <in>slapd-common.c</in>
+          <in>slapd-modify.c</in>
+          <in>slapd-modrdn.c</in>
+          <in>slapd-mtread.c</in>
+          <in>slapd-read.c</in>
+          <in>slapd-search.c</in>
+          <in>slapd-tester.c</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="patches" displayName="patches" projectFiles="true">
+      <itemPath>../../AA_derivites/patches/ITS5037.patch</itemPath>
+      <itemPath>../../AA_derivites/patches/ITS7506.patch</itemPath>
+      <itemPath>../../AA_derivites/patches/ITS7683.patch</itemPath>
+      <itemPath>../../AA_derivites/patches/ITS8054.patch</itemPath>
+      <itemPath>../../AA_derivites/patches/ITS8413.patch</itemPath>
+      <itemPath>../../AA_derivites/patches/ITS8432.patch</itemPath>
+      <itemPath>../../AA_derivites/patches/batched-write.patch</itemPath>
+      <itemPath>../../AA_derivites/patches/index-slot-increase.patch</itemPath>
+      <itemPath>../../AA_derivites/patches/liblmdb-soname.patch</itemPath>
+      <itemPath>../../AA_derivites/patches/threadpool.patch</itemPath>
+      <itemPath>../../AA_derivites/patches/writers.patch</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>configure</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+    <Elem>../packages-8.7.6/thirdparty/openldap/patches</Elem>
+    <Elem>../../AA_derivites/patches</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand>./configure CC=${IDE_CC} CXX=${IDE_CXX} CFLAGS="-g3 -gdwarf-2" CXXFLAGS="-g3 -gdwarf-2"</preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="../../AA_derivites/patches/ITS5037.patch"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../AA_derivites/patches/ITS7506.patch"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../AA_derivites/patches/ITS7683.patch"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../AA_derivites/patches/ITS8054.patch"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../AA_derivites/patches/ITS8413.patch"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../AA_derivites/patches/ITS8432.patch"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../AA_derivites/patches/batched-write.patch"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../AA_derivites/patches/index-slot-increase.patch"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../AA_derivites/patches/liblmdb-soname.patch"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../AA_derivites/patches/threadpool.patch"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../AA_derivites/patches/writers.patch"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="clients/tools/common.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="clients/tools/ldapcompare.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="clients/tools/ldapdelete.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="clients/tools/ldapexop.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="clients/tools/ldapmodify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="clients/tools/ldapmodrdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="clients/tools/ldappasswd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="clients/tools/ldapsearch.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="clients/tools/ldapurl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="clients/tools/ldapwhoami.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/examples/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/examples/readSchema.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/examples/startTls.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/examples/urlTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPAddRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPAsynConnection.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPAttrType.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPAttribute.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPAttributeList.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPBindRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPCompareRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPConnection.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPConstraints.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPControl.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPControlSet.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPDeleteRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPEntry.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPEntryList.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPException.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPExtRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPExtResult.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPMessage.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPMessageQueue.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPModDNRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPModList.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPModification.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPModifyRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPObjClass.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPRebind.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPRebindAuth.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPReferenceList.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPResult.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPSaslBindResult.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPSchema.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPSearchReference.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPSearchRequest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPSearchResult.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPSearchResults.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPUrl.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LDAPUrlList.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LdifReader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/LdifWriter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/SaslInteraction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/SaslInteractionHandler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/StringList.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="contrib/ldapc++/src/TlsOptions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="contrib/ldaptcl/neoXldap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="contrib/ldaptcl/tclAppInit.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="contrib/ldaptcl/tkAppInit.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/acl/gssacl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/acl/posixgroup.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/addpartial/addpartial-overlay.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/allop/allop.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/allowed/allowed.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/autogroup/autogroup.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/cloak/cloak.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/comp_match/asn_to_syn_mr.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/comp_match/authorityKeyIdentifier.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/comp_match/certificate.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/comp_match/componentlib.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/comp_match/crl.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/comp_match/init.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/denyop/denyop.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/dsaschema/dsaschema.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/dupent/dupent.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/kinit/kinit.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/lastbind/lastbind.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/lastmod/lastmod.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/noopsrch/noopsrch.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nops/nops.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nssov/alias.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nssov/ether.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nssov/group.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nssov/host.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nssov/netgroup.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nssov/network.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nssov/nss-pam-ldapd/tio.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nssov/nssov.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nssov/pam.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nssov/passwd.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nssov/protocol.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nssov/rpc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nssov/service.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/nssov/shadow.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/passwd/apr1.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/passwd/kerberos.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/passwd/netscape.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/passwd/pbkdf2/pw-pbkdf2.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/passwd/radius.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/passwd/sha2/sha2.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/passwd/sha2/slapd-sha2.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/proxyOld/proxyOld.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/samba4/pguid.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/samba4/rdnval.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/samba4/vernum.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/smbk5pwd/smbk5pwd.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapd-modules/trace/trace.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="contrib/slapi-plugins/addrdnvalues/addrdnvalues.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="doc/devel/template.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblber/assert.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblber/bprint.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblber/debug.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblber/decode.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblber/dtest.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblber/encode.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblber/etest.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblber/idtest.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblber/io.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblber/memory.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblber/nt_err.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblber/options.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblber/sockbuf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblber/stdio.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/abandon.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/add.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/addentry.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/apitest.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/assertion.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/cancel.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/charray.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/compare.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/controls.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/cyrus.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/dds.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/delete.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/deref.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/dnssrv.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/dntest.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/error.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/extended.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/fetch.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/filter.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/free.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/ftest.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/getattr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/getdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/getentry.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/getvalues.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/gssapi.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/ldap_sync.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/ldif.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/messages.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/modify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/modrdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/open.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/options.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/os-ip.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/os-local.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/pagectrl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/passwd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/ppolicy.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/print.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/references.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/request.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/result.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/sasl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/sbind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/schema.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/search.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/sort.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/sortctrl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/stctrl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/string.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/t61.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/test.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/tls2.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/tls_g.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/tls_m.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/tls_o.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/turn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/txn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/unbind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/url.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/urltest.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/utf-8-conv.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/utf-8.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/util-int.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/vlvctrl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap/whoami.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap_r/rdwr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap_r/rmutex.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap_r/rq.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap_r/thr_cthreads.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap_r/thr_debug.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap_r/thr_nt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap_r/thr_posix.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap_r/thr_pth.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap_r/thr_stub.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap_r/thr_thr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap_r/threads.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/libldap_r/tpool.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblmdb/mdb.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblmdb/mdb_copy.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblmdb/mdb_dump.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblmdb/mdb_load.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblmdb/mdb_stat.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblmdb/midl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblmdb/mtest.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblmdb/mtest2.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblmdb/mtest3.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblmdb/mtest4.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblmdb/mtest5.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblmdb/mtest6.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblunicode/ucdata/ucdata.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="libraries/liblunicode/ucdata/ucgendat.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="libraries/liblunicode/ucdata/ucpgba.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="libraries/liblunicode/ucstr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblunicode/ure/ure.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblunicode/ure/urestubs.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="libraries/liblunicode/utbm/utbm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblunicode/utbm/utbmstub.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="libraries/liblutil/avl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/base64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/detach.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/entropy.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/getopt.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/getpass.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/getpeereid.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/hash.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/lockf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/md5.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/memcmp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/meter.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/ntservice.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/passfile.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/passwd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/ptest.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/sasl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/setproctitle.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/sha1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/signal.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/sockpair.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/tavl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/testavl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/testtavl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/utils.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/liblutil/uuid.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/librewrite/config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/librewrite/context.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/librewrite/info.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/librewrite/ldapmap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/librewrite/map.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/librewrite/params.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/librewrite/parse.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/librewrite/rewrite.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/librewrite/rule.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/librewrite/session.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/librewrite/subst.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/librewrite/var.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="libraries/librewrite/xmap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/abandon.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/aci.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/acl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/aclparse.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/ad.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/add.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/alock.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/at.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/attr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/ava.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/add.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/attr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/cache.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/compare.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/dbcache.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/delete.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/dn2entry.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/dn2id.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/error.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/extended.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/filterindex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/id2entry.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/idl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/index.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/key.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/modify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/modrdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/monitor.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/nextid.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/operational.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/referral.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/search.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/tools.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-bdb/trans.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-dnssrv/bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-dnssrv/compare.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-dnssrv/config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-dnssrv/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-dnssrv/referral.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-dnssrv/search.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/add.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/chain.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/compare.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/delete.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/distproc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/extended.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/modify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/modrdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/monitor.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/pbind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/search.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldap/unbind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ldif/ldif.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/add.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/attr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/compare.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/delete.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/dn2entry.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/dn2id.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/extended.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/filterindex.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/id2entry.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/idl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/index.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/key.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/modify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/modrdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/monitor.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/nextid.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/operational.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/referral.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/search.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-mdb/tools.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/add.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/candidates.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/compare.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/conn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/delete.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/dncache.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/map.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/modify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/modrdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/search.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/suffixmassage.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-meta/unbind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/backend.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/cache.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/compare.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/conn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/database.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/entry.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/listener.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/log.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/modify.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/operation.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/operational.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/overlay.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/rww.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/search.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/sent.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/thread.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-monitor/time.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ndb/add.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ndb/bind.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ndb/compare.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ndb/config.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ndb/delete.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ndb/init.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ndb/modify.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ndb/modrdn.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ndb/ndbio.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ndb/search.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-ndb/tools.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-null/null.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-passwd/config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-passwd/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-passwd/search.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-perl/add.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-perl/bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-perl/close.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-perl/compare.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-perl/config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-perl/delete.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-perl/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-perl/modify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-perl/modrdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-perl/search.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-relay/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-relay/op.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-shell/add.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-shell/bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-shell/compare.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-shell/config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-shell/delete.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-shell/fork.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-shell/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-shell/modify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-shell/modrdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-shell/result.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-shell/search.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-shell/unbind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sock/add.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sock/bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sock/compare.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sock/config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sock/delete.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sock/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sock/modify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sock/modrdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sock/opensock.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sock/result.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sock/search.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sock/unbind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/add.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/api.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/compare.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/delete.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/entry-id.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/modify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/modrdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/operational.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/rdbms_depend/timesten/dnreverse/dnreverse.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/schema-map.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/search.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/sql-wrap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/back-sql/util.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/backend.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/backglue.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/backover.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/bconfig.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/cancel.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/ch_malloc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/compare.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/component.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/connection.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/controls.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/cr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/ctxcsn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/daemon.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/delete.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/dn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/entry.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/extended.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/filter.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/filterentry.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/frontend.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/globals.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/index.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/ldapsync.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/limits.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/lock.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/matchedValues.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/modify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/modrdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/mods.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/module.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/mr.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/mra.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/nt_svc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/oc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/oidm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/operation.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/operational.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/accesslog.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/auditlog.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/collect.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/constraint.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/dds.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/deref.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/dyngroup.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/dynlist.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/memberof.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/overlays.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/pcache.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/ppolicy.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/refint.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/retcode.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/rwm.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/rwmconf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/rwmdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/rwmmap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/seqmod.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/sssvlv.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/syncprov.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/translucent.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/unique.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/overlays/valsort.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/passwd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/phonetic.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/referral.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/result.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/root_dse.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/sasl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/saslauthz.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/schema.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/schema_check.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/schema_init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/schema_prep.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/schemaparse.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/search.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/sets.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/shell-backends/passwd-shell.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/shell-backends/shellutil.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/sl_malloc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapacl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapadd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapauth.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapcat.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapcommon.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapi/plugin.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapi/printmsg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapi/slapi_dn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapi/slapi_ext.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapi/slapi_ops.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapi/slapi_overlay.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="servers/slapd/slapi/slapi_pblock.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapi/slapi_utils.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapindex.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slappasswd.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slapschema.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/slaptest.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/starttls.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/str2filter.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/syncrepl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/syntax.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/txn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/unbind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/user.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/value.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="servers/slapd/zn_malloc.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tests/progs/ldif-filter.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tests/progs/slapd-addel.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tests/progs/slapd-bind.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tests/progs/slapd-common.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tests/progs/slapd-modify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tests/progs/slapd-modrdn.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tests/progs/slapd-mtread.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tests/progs/slapd-read.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tests/progs/slapd-search.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tests/progs/slapd-tester.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

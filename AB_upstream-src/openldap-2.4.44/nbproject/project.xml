@@ -11,8 +11,6 @@
             <make-dep-projects/>
             <sourceRootList>
                 <sourceRootElem>.</sourceRootElem>
-                <sourceRootElem>../packages-8.7.6/thirdparty/openldap/patches</sourceRootElem>
-                <sourceRootElem>../../AA_derivites/patches</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

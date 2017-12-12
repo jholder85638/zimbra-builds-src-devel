@@ -1,9 +1,10 @@
 ### ~from ThirdParty/Makefile:
 # - include via ThirdParty/${package}/Makefile
+#/opt/zimbra-builds-src-devel/AB_upstream-src/package-stub-8.7/bin/get_plat_tag.sh
 SHELL := /bin/bash
 
-DEF_ROOT := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
-STUB_ROOT := $(DEF_ROOT)/..
+DEF_ROOT := /opt/zimbra-builds-src-devel/AB_upstream-src/package-stub-8.7/def/
+STUB_ROOT := /opt/zimbra-builds-src-devel/AB_upstream-src/package-stub-8.7/
 
 BUILD_PLATFORM ?= $(shell sh $(STUB_ROOT)/bin/get_plat_tag.sh)
 
