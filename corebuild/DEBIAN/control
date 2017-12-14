@@ -1,8 +1,0 @@
-Package: zimbra-core
-Version: 8.7.0.GA.1659.UBUNTU14.64
-Description: Best email money can buy
-Maintainer: build@zimbra.com
-Section: mail
-Priority: optional
-Architecture: amd64
-Depends: zimbra-core-components, zimbra-timezone-data (>= 1.0.1+1510156506-1.u14) , zimbra-common-mbox-db, zimbra-common-mbox-conf-msgs, zimbra-common-mbox-conf-rights, zimbra-common-mbox-native-lib, zimbra-common-mbox-conf, zimbra-common-mbox-docs, zimbra-common-mbox-conf-attrs

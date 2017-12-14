@@ -1,4 +1,0 @@
-libnetsnmp 30 zimbra-net-snmp-lib (>= VERSION-ITERATION)
-libnetsnmpagent 30 zimbra-net-snmp-lib (>= VERSION-ITERATION)
-libnetsnmpmibs 30 zimbra-net-snmp-lib (>= VERSION-ITERATION)
-libnetsnmptrapd 30 zimbra-net-snmp-lib (>= VERSION-ITERATION)

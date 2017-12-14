@@ -1,8 +1,0 @@
-Package: zimbra-store
-Version: 8.7.0.GA.1659.UBUNTU14.64
-Description: Best email money can buy
-Maintainer: build@zimbra.com
-Section: Mail
-Priority: optional
-Architecture: amd64
-Depends: zimbra-core, zimbra-store-components, zimbra-jetty-distribution (>= 9.3.5.v20151012-2.u14), zimbra-mbox-service, zimbra-mbox-war, zimbra-mbox-conf

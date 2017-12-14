@@ -1,2 +1,0 @@
-osdeps.RHEL7_64 := nmap-ncat
-osdeps.RHEL6_64 := nc

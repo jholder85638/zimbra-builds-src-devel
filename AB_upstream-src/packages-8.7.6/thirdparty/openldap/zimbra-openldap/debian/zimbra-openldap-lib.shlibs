@@ -1,3 +1,0 @@
-liblber-2.4 2 zimbra-openldap-lib (>= VERSION-ITERATION)
-libldap-2.4 2 zimbra-openldap-lib (>= VERSION-ITERATION)
-libldap_r-2.4 2 zimbra-openldap-lib (>= VERSION-ITERATION)
