@@ -1,0 +1,8 @@
+Package: zimbra-ldap
+Version: 8.7.0.GA.1659.UBUNTU14.64
+Description: Best email money can buy
+Maintainer: build@zimbra.com
+Section: Mail
+Priority: optional
+Architecture: amd64
+Depends: zimbra-core, zimbra-ldap-components

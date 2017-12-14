@@ -1,0 +1,5 @@
+ecdd85c1574f0d6f9d67aa7a68f7818a  opt/zimbra/common/conf/snmp.conf
+ecdd85c1574f0d6f9d67aa7a68f7818a  opt/zimbra/common/share/snmp/snmp.conf
+73f8d1cb8ee82921f13c9ed784482fec  opt/zimbra/common/share/snmp/mibs/zimbra_traps.mib
+3688a6cdb34e2b3718846b0e3503815b  opt/zimbra/common/share/snmp/mibs/zimbra.mib
+77af1edbb32993a3c0bd22cda086f207  opt/zimbra/conf/snmpd.conf.in

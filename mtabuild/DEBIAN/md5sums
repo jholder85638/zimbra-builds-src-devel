@@ -1,0 +1,5 @@
+9cad081a8afe292b6dc2a9c9461bbc06  etc/sudoers.d/02_zimbra-mta
+cb3ccd5c9da9a605d54f785fb9ae0195  opt/zimbra/data/amavisd/mysql/antispamdb.sql
+bc253d082705a8c9fe35a00d927c19ed  opt/zimbra/common/conf/tag_as_foreign.re.in
+d8f8e3db1550282bde21c556139f3610  opt/zimbra/common/conf/master.cf.in
+5d22319186661bec49487e1fea830d27  opt/zimbra/common/conf/tag_as_originating.re.in

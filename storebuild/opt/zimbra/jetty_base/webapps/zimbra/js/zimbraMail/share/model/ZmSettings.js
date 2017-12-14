@@ -842,8 +842,8 @@ function() {
 	this.registerSetting("BRANCH",							{type:ZmSetting.T_CONFIG, defaultValue:"JUDASPRIEST"});
 
 	// next 3 are replaced during deployment
-	this.registerSetting("CLIENT_DATETIME",					{type:ZmSetting.T_CONFIG, defaultValue:"20171207-1822"});
-	this.registerSetting("CLIENT_RELEASE",					{type:ZmSetting.T_CONFIG, defaultValue:"20171207181704"});
+	this.registerSetting("CLIENT_DATETIME",					{type:ZmSetting.T_CONFIG, defaultValue:"20171211-2342"});
+	this.registerSetting("CLIENT_RELEASE",					{type:ZmSetting.T_CONFIG, defaultValue:"20171211233807"});
 	this.registerSetting("CLIENT_VERSION",					{type:ZmSetting.T_CONFIG, defaultValue:"8.7.0_GA_1659"});
 	this.registerSetting("CONFIG_PATH",						{type:ZmSetting.T_CONFIG, defaultValue:appContextPath + "/js/zimbraMail/config"});
 	this.registerSetting("CSFE_EXPORT_URI",					{type:ZmSetting.T_CONFIG});
