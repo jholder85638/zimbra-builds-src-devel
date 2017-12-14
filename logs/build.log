@@ -1,0 +1,51 @@
+	*** corebuild package successfully created ***
+	Create package directories
+	Copy package files
+	*** ldapbuild package successfully created ***
+	Create package directories...
+	*** loggerbuild package successfully created ***
+	Create package directories
+	Copy package files
+	*** mtabuild package successfully created ***
+	Create package directories
+	*** dnscachebuild package successfully created ***
+	Create package directories
+	Copy package files
+	*** snmpbuild package successfully created ***
+	Create package directories
+	Copy package files
+	Copy etc files
+	Copy bin files of /opt/zimbra/
+	Copy extensions-extra files of /op/zimbra/
+	Copy lib files of /opt/zimbra/
+		Copy ext files of /opt/zimbra/lib/
+\t\t++++++++++ service.war content ++++++++++
+\t\t++++++++++ zimbra.war content ++++++++++
+\t\t***** help content *****
+\t\t***** portals example content *****
+\t\t***** robots.txt content *****
+\t\t++++++++++ zimbraAdmin.war content ++++++++++
+\t\t***** downloads content *****
+\t\t***** help content *****
+\t\t***** img content *****
+\t\t***** public content *****
+\t\t***** templates content *****
+\t\t***** messages content *****
+		Copy work folder of zm-web-client build to /opt/zimbra/jetty/
+	Copy log files of /opt/zimbra/
+	Copy zimlets files of /opt/zimbra/
+\t\t***** Building jetty/common/ *****
+	Create jetty conf
+	*** storebuild package successfully created ***
+	Create package directories
+	Copy package files
+	*** apachebuild package successfully created ***
+	Create package directories
+	Copy package files
+	*** spellbuild package successfully created ***
+	Create package directories
+	Copy package files
+	*** proxybuild package successfully created ***
+	Create package directories
+	Copy package files
+	*** imapdbuild package successfully created ***
